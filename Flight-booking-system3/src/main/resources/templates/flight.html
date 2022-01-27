@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Flight Search</title>
+</head>
+<body>
+
+
+<style type="text/css">
+    body,td,th{
+        color: #000000;
+    }
+    
+    body{
+        background-color: #F0F0F0;
+    }
+    
+    .style1
+    {
+        font-family: arial;
+        font-size: 14px;
+        padding: 12px;
+        line-height: 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        
+    }
+    
+    .style2
+    {
+        font-family: arial;
+        font-size: 17px;
+        padding: 12px;
+        line-height: 25px;
+        border-radius: 8px;
+        text-decoration: none;
+        
+    }
+    div {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+    
+</style>
+    
+    </head>
+    <body>
+        <div class="container">
+
+
+</head>
+            <table width="100%" height="100%" border="0" cellpadding="0" align="center">
+            <tr>
+                <td align="center" valign="middle">
+                <table class="table-bordered" width="350" border="0" cellpadding="3"cellspacing="3" bgcolor="#FCE5E0">
+        
+			        <form action="#" th:action="@{/flight}" th:object="${user1}" method="post">
+			        <div class="col-md-6">
+			        
+			     </div>
+			  
+			                   	  <tr>
+                                    <td height="25" colspan="2" align="left" valign="middle" bgcolor="#ffffff" class="style2">
+                                        <div align="center">
+                                             <strong> COUNTRY SELECTION </strong>
+                                          
+                                        </div>
+                                     
+                                    </td>
+                                </tr>
+
+			            <tr>
+			               <td><p> <strong> Arrival country</strong></p></td>
+			                <td> 			           
+				                <p><input type="text" th:field="*{arrivalcity}" placehoder="Enter City" class="form-control" /></p>
+				               
+    
+			                </td>		               
+			            </tr>
+			            <tr>
+			                <td><p> <strong>Departure country</strong> </p></td>
+			                <td><p><input type="text" th:field="*{departurecity}" placeholder="Enter City" class="form-control" /></p></td>
+			            </tr>
+			            <tr>
+			                <td><p> <strong>Departure Date</strong> </p> </td>
+			                
+			                <td><p><input type="text" placeholder="dd/mm/yyyy"class="form-control" /></p></td>
+			            </tr>
+			             <tr>
+			                <td><p><strong>Return  Date</strong> </p> </td>
+			                <td><p><input type="text" placeholder="dd/mm/yyyy"class="form-control" /></p></td>
+			            </tr>
+				        <td colspan="2"><button type="submit" class="btn btn-info" align="center">Search</button> </td>
+			            </tr>
+
+				             			         		        
+			     
+			    </form>
+
+       </table>  
+         </td>   
+         </tr>  
+      </table> 
+     </div> 
+
+</body>
+</html>
