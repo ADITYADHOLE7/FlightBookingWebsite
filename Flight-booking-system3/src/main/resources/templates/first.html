@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Flights</title>
+</head>
+<body style="background-color:beige";>
+<h1 align="center">Available Flights</h1>
+<table border="1" align="center" style="background-color:cornsilk";>
+<thead>
+<tr>
+<th>Flight Number</th>
+<th>Flight Name</th>
+<th>Flight Start Time</th>
+<th>Flight End Time</th>
+<th>Total Seats</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr th:each="flight:${Flight}">
+<td th:text="${flight.flight_no}"></td>
+<td th:text="${flight.flight_name}"></td>
+<td th:text="${flight.start_time}"></td>
+<td th:text="${flight.end_time}"></td>
+<td th:text="${flight.total_seats}"></td>
+<td><button type="button">Book Seats</button></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

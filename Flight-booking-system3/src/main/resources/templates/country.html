@@ -57,7 +57,7 @@
                 <td align="center" valign="middle">
                 <table class="table-bordered" width="350" border="0" cellpadding="3"cellspacing="3" bgcolor="#FCE5E0">
         
-			        <form action="#" th:action="@{/flight}" th:object="${user1}" method="post">
+			        <form th:action="@{/first}" th:object="${country}" method="post" class="style1">
 			        <div class="col-md-6">
 			        
 			     </div>
@@ -71,6 +71,10 @@
                                      
                                     </td>
                                 </tr>
+                                 <tr>
+				<td id="res"><strong>Country Id</strong></td>
+				<td><input type="text" th:field="*{countryid}" />
+			</tr>
 
 			            <tr>
 			               <td><p> <strong> Arrival country</strong></p></td>
@@ -94,10 +98,11 @@
 			                <td><p><input type="text" placeholder="dd/mm/yyyy"class="form-control" /></p></td>
 			            </tr>
 				        <td colspan="2"><button type="submit" class="btn btn-info" align="center">Search</button> </td>
-			            </tr>
-
-				             			         		        
-			     
+			            </tr>	
+			            <tbody>
+</form>
+</tr>
+</tbody>			             			         		       			     
 			    </form>
 
        </table>  
@@ -105,6 +110,12 @@
          </tr>  
       </table> 
      </div> 
+     </form>
+</tr>
+</tbody>
+</table>
+</table>
+
 
 </body>
 </html>

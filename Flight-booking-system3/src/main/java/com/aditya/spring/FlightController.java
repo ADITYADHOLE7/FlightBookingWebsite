@@ -34,7 +34,7 @@ package com.aditya.spring;
 	    	System.out.print(oauthUser);
 	    	if(Objects.nonNull(oauthUser)) 
 	    	{		  
-	    		return "redirect:/flight"; 		
+	    		return "redirect:/country"; 	
   	} else {
 	    		return "redirect:/login";   		}
 	  }
@@ -45,7 +45,7 @@ package com.aditya.spring;
 	    	
 		  
 	        return "redirect:/login";
-	    }
+    }
 	   
 	    
 	   
